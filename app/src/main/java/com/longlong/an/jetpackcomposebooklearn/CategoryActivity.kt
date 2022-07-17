@@ -7,9 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.layout.Arrangement
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.longlong.an.jetpackcomposebooklearn.chapter2.TextDisplayActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter2.TextFieldActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter2.ThemeActivity
 
 class CategoryActivity : AppCompatActivity() {
@@ -22,7 +25,8 @@ class CategoryActivity : AppCompatActivity() {
         mutableListOf(
             ItemInfo("Main",this.baseContext,MainActivity::class.java),
             ItemInfo("主题",this.baseContext,ThemeActivity::class.java),
-            ItemInfo("Text 的属性使用",this.application, TextDisplayActivity::class.java)
+            ItemInfo("Text 的属性使用",this.application, TextDisplayActivity::class.java),
+            ItemInfo("TextField 的属性使用",this.application, TextFieldActivity::class.java)
         )
     }
 
@@ -30,6 +34,7 @@ class CategoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_category)
         recycle.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        recycle.addItemDecoration(DividerItemDecoration(application, DividerItemDecoration.VERTICAL))
         recycle.adapter = CategoryAdapter(recycleData)
     }
 
