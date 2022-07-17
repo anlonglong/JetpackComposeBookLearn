@@ -14,13 +14,13 @@
         android:theme="@style/Theme.JetpackComposeBookLearn"
         tools:targetApi="31">
         <activity
-            android:name=".CategoryActivity"
+            android:name=".chapter2.TextDisplayActivity"
             android:exported="false" />
         <activity
             android:name=".chapter2.ThemeActivity"
             android:exported="false" />
         <activity
-            android:name=".chapter2.TextDisplayActivity"
+            android:name=".CategoryActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.JetpackComposeBookLearn">

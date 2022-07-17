@@ -23,7 +23,7 @@ class ThemeActivity : ComponentActivity() {
         setContent {
             JetpackComposeBookLearnTheme {
                 Surface(color = MaterialTheme.colors.primary) {
-
+                    Text1()
                 }
             }
         }
