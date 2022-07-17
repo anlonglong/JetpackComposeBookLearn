@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.longlong.an.jetpackcomposebooklearn.chapter2.ButtonActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter2.TextDisplayActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter2.TextFieldActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter2.ThemeActivity
@@ -26,7 +27,8 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Main",this.baseContext,MainActivity::class.java),
             ItemInfo("主题",this.baseContext,ThemeActivity::class.java),
             ItemInfo("Text 的属性使用",this.application, TextDisplayActivity::class.java),
-            ItemInfo("TextField 的属性使用",this.application, TextFieldActivity::class.java)
+            ItemInfo("TextField/OutlinedTextField 的属性使用",this.application, TextFieldActivity::class.java),
+            ItemInfo("Button 的属性使用",this.application, ButtonActivity::class.java),
         )
     }
 
