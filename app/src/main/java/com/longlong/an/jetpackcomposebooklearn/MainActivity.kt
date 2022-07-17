@@ -9,16 +9,19 @@ import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.longlong.an.jetpackcomposebooklearn.chapter1.TextViewModel
 import com.longlong.an.jetpackcomposebooklearn.ui.theme.JetpackComposeBookLearnTheme
+import kotlinx.coroutines.flow.flowOf
 
 private const val TAG = "MainActivity"
 class MainActivity : ComponentActivity() {
@@ -113,6 +116,20 @@ fun ComposeStatue3(index:Int,onIndexChanged: (Int)->Unit = {}){
         }
         Text(text = "Index = $index")
     }
+}
+
+
+/**
+ * compose中对存储类型没有要求，可以是livedata，flow ，Rxjava等，
+ * 但是对于读取的数据类型是有要求的，必须是state的类型，随所以compose提供了很多的将可观察
+ * 类型转换成state的类型的方法，
+ * eg：
+ * LiveData：testViewModel.index.observeAsState(0)
+ */
+@Composable
+fun ComposeStatue5(testViewModel: TextViewModel = viewModel()){
+    val index by testViewModel.index.observeAsState(0)
+    ComposeStatue3(index){testViewModel.onIndexChanged(it)}
 }
 
 

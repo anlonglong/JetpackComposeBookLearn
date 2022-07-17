@@ -7,10 +7,22 @@
         <entry key="../../../../layout/compose-model-1657938193154.xml" value="0.5" />
         <entry key="../../../../layout/compose-model-1657938948132.xml" value="0.35185185185185186" />
         <entry key="../../../../layout/compose-model-1657940036203.xml" value="1.0" />
+        <entry key="../../../../layout/compose-model-1657961249133.xml" value="1.5" />
+        <entry key="../../../../layout/compose-model-1657973573698.xml" value="0.12952799121844127" />
+        <entry key="../../../../layout/compose-model-1658022585968.xml" value="1.5" />
+        <entry key="../../../../layout/compose-model-1658023841524.xml" value="0.8054545454545454" />
+        <entry key="../../../../layout/compose-model-1658026521536.xml" value="0.7758444216990789" />
+        <entry key="../../../../layout/compose-model-1658033236643.xml" value="0.3984039287906691" />
+        <entry key="../../../../layout/compose-model-1658044924249.xml" value="0.21927609427609426" />
+        <entry key="../../../../layout/compose-model-1658047510397.xml" value="0.1685185185185185" />
+        <entry key="../../../../layout/compose-model-1658047558706.xml" value="1.0" />
+        <entry key="app/src/main/res/layout/activity_category.xml" value="0.15806159420289856" />
+        <entry key="app/src/main/res/layout/activity_themectivity.xml" value="0.16576086956521738" />
+        <entry key="app/src/main/res/layout/category_item.xml" value="0.335" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
