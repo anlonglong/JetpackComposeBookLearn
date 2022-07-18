@@ -34,6 +34,7 @@
         <activity android:name=".chapter2.TextFieldActivity" />
         <activity android:name=".chapter2.ButtonActivity" />
         <activity android:name=".chapter2.ImageViewActivity" />
+        <activity android:name=".chapter2.ProgressBarActivity" />
     </application>
 
 </manifest>

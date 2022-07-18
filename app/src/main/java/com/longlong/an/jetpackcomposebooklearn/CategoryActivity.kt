@@ -27,7 +27,8 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Text 的属性使用",this.application, TextDisplayActivity::class.java),
             ItemInfo("TextField/OutlinedTextField 的属性使用",this.application, TextFieldActivity::class.java),
             ItemInfo("Button 的属性使用",this.application, ButtonActivity::class.java),
-            ItemInfo("Button 的属性使用",this.application, ImageViewActivity::class.java),
+            ItemInfo("Image 的属性使用",this.application, ImageViewActivity::class.java),
+            ItemInfo("Progress 的属性使用",this.application, ProgressBarActivity::class.java),
         )
     }
 
