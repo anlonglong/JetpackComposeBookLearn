@@ -57,7 +57,7 @@ class ImageViewActivity : ComponentActivity() {
 
     @Composable
     fun ImageTest3() {
-        AsyncImage(model = , contentDescription = )
+       // AsyncImage(model = , contentDescription = )
     }
 
     @Preview(showBackground = true, widthDp = 200, heightDp = 100)
