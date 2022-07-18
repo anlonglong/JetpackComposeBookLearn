@@ -1,5 +1,6 @@
 package com.longlong.an.jetpackcomposebooklearn
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -11,10 +12,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.longlong.an.jetpackcomposebooklearn.chapter2.ButtonActivity
-import com.longlong.an.jetpackcomposebooklearn.chapter2.TextDisplayActivity
-import com.longlong.an.jetpackcomposebooklearn.chapter2.TextFieldActivity
-import com.longlong.an.jetpackcomposebooklearn.chapter2.ThemeActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter2.*
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -29,6 +27,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Text 的属性使用",this.application, TextDisplayActivity::class.java),
             ItemInfo("TextField/OutlinedTextField 的属性使用",this.application, TextFieldActivity::class.java),
             ItemInfo("Button 的属性使用",this.application, ButtonActivity::class.java),
+            ItemInfo("Button 的属性使用",this.application, ImageViewActivity::class.java),
         )
     }
 
@@ -68,10 +67,14 @@ class CategoryActivity : AppCompatActivity() {
 
     }
 
-    inner class CategoryViewHolder(private val itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class CategoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val itemText: TextView = itemView.findViewById(R.id.tv)
 
     }
 
     data class ItemInfo(val desc: String, val ctx: Context, val java: Class<out Any>)
+
+    inline fun <reified T : Activity> Context.starter(){
+        this.startActivity(Intent(this, T::class.java))
+    }
 }

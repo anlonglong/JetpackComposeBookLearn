@@ -33,6 +33,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".chapter2.TextFieldActivity" />
         <activity android:name=".chapter2.ButtonActivity" />
+        <activity android:name=".chapter2.ImageViewActivity" />
     </application>
 
 </manifest>
