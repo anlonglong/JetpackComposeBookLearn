@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.longlong.an.jetpackcomposebooklearn.chapter2.*
+import com.longlong.an.jetpackcomposebooklearn.chapter4.ColumnActivity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -29,6 +30,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Button 的属性使用",this.application, ButtonActivity::class.java),
             ItemInfo("Image 的属性使用",this.application, ImageViewActivity::class.java),
             ItemInfo("Progress 的属性使用",this.application, ProgressBarActivity::class.java),
+            ItemInfo("Column布局",this.application, ColumnActivity::class.java),
         )
     }
 

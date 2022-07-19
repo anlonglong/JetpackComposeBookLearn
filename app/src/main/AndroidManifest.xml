@@ -35,6 +35,7 @@
         <activity android:name=".chapter2.ButtonActivity" />
         <activity android:name=".chapter2.ImageViewActivity" />
         <activity android:name=".chapter2.ProgressBarActivity" />
+        <activity android:name=".chapter4.ColumnActivity" />
     </application>
 
 </manifest>
