@@ -13,9 +13,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.longlong.an.jetpackcomposebooklearn.chapter2.*
-import com.longlong.an.jetpackcomposebooklearn.chapter4.BoxActivity
-import com.longlong.an.jetpackcomposebooklearn.chapter4.ColumnActivity
-import com.longlong.an.jetpackcomposebooklearn.chapter4.RowActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter4.*
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -35,6 +33,8 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Column布局",this.application, ColumnActivity::class.java),
             ItemInfo("Row布局",this.application, RowActivity::class.java),
             ItemInfo("Box布局",this.application, BoxActivity::class.java),
+            ItemInfo("Modify布局",this.application, ModifyActivity::class.java),
+            ItemInfo("Scaffold布局",this.application, ScaffoldActivity::class.java),
         )
     }
 
