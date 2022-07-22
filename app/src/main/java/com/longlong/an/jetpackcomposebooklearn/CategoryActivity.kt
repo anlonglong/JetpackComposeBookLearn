@@ -35,6 +35,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Box布局",this.application, BoxActivity::class.java),
             ItemInfo("Modify布局",this.application, ModifyActivity::class.java),
             ItemInfo("Scaffold布局",this.application, ScaffoldActivity::class.java),
+            ItemInfo("Constraint布局",this.application, ConstranitActivity::class.java),
         )
     }
 

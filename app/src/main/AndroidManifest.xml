@@ -39,6 +39,7 @@
         <activity android:name=".chapter4.RowActivity" />
         <activity android:name=".chapter4.BoxActivity" />
         <activity android:name=".chapter4.ScaffoldActivity" />
+        <activity android:name=".chapter4.ConstranitActivity" />
     </application>
 
 </manifest>
