@@ -40,6 +40,7 @@
         <activity android:name=".chapter4.BoxActivity" />
         <activity android:name=".chapter4.ScaffoldActivity" />
         <activity android:name=".chapter4.ConstranitActivity" />
+        <activity android:name=".chapter5.LazyColumnActivty" />
     </application>
 
 </manifest>

@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.longlong.an.jetpackcomposebooklearn.chapter2.*
 import com.longlong.an.jetpackcomposebooklearn.chapter4.*
+import com.longlong.an.jetpackcomposebooklearn.chapter5.LazyColumnActivty
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -36,6 +37,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Modify布局",this.application, ModifyActivity::class.java),
             ItemInfo("Scaffold布局",this.application, ScaffoldActivity::class.java),
             ItemInfo("Constraint布局",this.application, ConstranitActivity::class.java),
+            ItemInfo("LazyColumn布局",this.application, LazyColumnActivty::class.java),
         )
     }
 
