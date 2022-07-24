@@ -8,13 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.foundation.layout.Arrangement
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.longlong.an.jetpackcomposebooklearn.chapter2.*
 import com.longlong.an.jetpackcomposebooklearn.chapter4.*
 import com.longlong.an.jetpackcomposebooklearn.chapter5.LazyColumnActivty
+import com.longlong.an.jetpackcomposebooklearn.chapter5.MultiTypeActivity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -38,6 +38,8 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Scaffold布局",this.application, ScaffoldActivity::class.java),
             ItemInfo("Constraint布局",this.application, ConstranitActivity::class.java),
             ItemInfo("LazyColumn布局",this.application, LazyColumnActivty::class.java),
+            ItemInfo("MultiLazyColumn布局",this.application, MultiTypeActivity::class.java),
+
         )
     }
 
