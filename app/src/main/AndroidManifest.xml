@@ -42,6 +42,7 @@
         <activity android:name=".chapter4.ConstranitActivity" />
         <activity android:name=".chapter5.LazyColumnActivty" />
         <activity android:name=".chapter5.MultiTypeActivity" />
+        <activity android:name=".chapter5.StickActivity" />
     </application>
 
 </manifest>
