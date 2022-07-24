@@ -33,6 +33,16 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".chapter2.TextFieldActivity" />
         <activity android:name=".chapter2.ButtonActivity" />
+        <activity android:name=".chapter2.ImageViewActivity" />
+        <activity android:name=".chapter2.ProgressBarActivity" />
+        <activity android:name=".chapter4.ColumnActivity" />
+        <activity android:name=".chapter4.RowActivity" />
+        <activity android:name=".chapter4.BoxActivity" />
+        <activity android:name=".chapter4.ScaffoldActivity" />
+        <activity android:name=".chapter4.ConstranitActivity" />
+        <activity android:name=".chapter5.LazyColumnActivty" />
+        <activity android:name=".chapter5.MultiTypeActivity" />
+        <activity android:name=".chapter5.StickActivity" />
     </application>
 
 </manifest>
