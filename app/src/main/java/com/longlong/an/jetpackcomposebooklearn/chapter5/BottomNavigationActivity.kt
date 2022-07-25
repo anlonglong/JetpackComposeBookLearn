@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.*
@@ -29,29 +30,31 @@ class BottomNavigationActivity : ComponentActivity() {
 
     @Composable
     fun One() {
-        BaseDefault(content = "One")
+        BaseDefault(content = "One", Color.Red)
     }
 
     @Composable
     fun Two() {
-        BaseDefault(content = "Two")
+        BaseDefault(content = "Two",Color.Magenta)
     }
 
     @Composable
     fun Three() {
-        BaseDefault(content = "Three")
+        BaseDefault(content = "Three",Color.Blue)
     }
 
 
     @Composable
     fun Four() {
-        BaseDefault(content = "Four")
+        BaseDefault(content = "Four",Color.Yellow)
     }
 
     @Composable
-    fun BaseDefault(content: String) {
+    fun BaseDefault(content: String, bg: Color) {
         Row(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier
+                .fillMaxSize()
+                .background(bg),
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -79,14 +82,12 @@ class BottomNavigationActivity : ComponentActivity() {
                 }
             }
         }) {
-
-        }
-
-        when (position) {
-            Tab.ONE -> One()
-            Tab.TWO -> Two()
-            Tab.THREE -> Three()
-            Tab.FOUR -> Four()
+            when (position) {
+                Tab.ONE -> One()
+                Tab.TWO -> Two()
+                Tab.THREE -> Three()
+                Tab.FOUR -> Four()
+            }
         }
     }
 }
