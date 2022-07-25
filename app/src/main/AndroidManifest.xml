@@ -43,6 +43,7 @@
         <activity android:name=".chapter5.LazyColumnActivty" />
         <activity android:name=".chapter5.MultiTypeActivity" />
         <activity android:name=".chapter5.StickActivity" />
+        <activity android:name=".chapter5.BottomNavigationActivity" />
     </application>
 
 </manifest>
