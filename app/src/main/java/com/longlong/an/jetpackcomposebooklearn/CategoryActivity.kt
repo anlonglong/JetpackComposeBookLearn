@@ -18,6 +18,7 @@ import com.longlong.an.jetpackcomposebooklearn.chapter5.LazyColumnActivty
 import com.longlong.an.jetpackcomposebooklearn.chapter5.MultiTypeActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter5.StickActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter6.CustomerView1Activity
+import com.longlong.an.jetpackcomposebooklearn.chapter6.CustomerView2Activity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -49,6 +50,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("StickLazyColumn布局", this.application, StickActivity::class.java),
             ItemInfo("Bottom navi 布局", this.application, BottomNavigationActivity::class.java),
             ItemInfo("Customer view 1", this.application, CustomerView1Activity::class.java),
+            ItemInfo("Customer view 2 矩形｜椭圆", this.application, CustomerView2Activity::class.java),
 
             )
     }
