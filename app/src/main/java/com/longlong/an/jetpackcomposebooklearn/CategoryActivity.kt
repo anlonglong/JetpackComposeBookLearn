@@ -13,9 +13,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.longlong.an.jetpackcomposebooklearn.chapter2.*
 import com.longlong.an.jetpackcomposebooklearn.chapter4.*
+import com.longlong.an.jetpackcomposebooklearn.chapter5.BottomNavigationActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter5.LazyColumnActivty
 import com.longlong.an.jetpackcomposebooklearn.chapter5.MultiTypeActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter5.StickActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter6.CustomerView1Activity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -45,6 +47,8 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("LazyColumn布局", this.application, LazyColumnActivty::class.java),
             ItemInfo("MultiLazyColumn布局", this.application, MultiTypeActivity::class.java),
             ItemInfo("StickLazyColumn布局", this.application, StickActivity::class.java),
+            ItemInfo("Bottom navi 布局", this.application, BottomNavigationActivity::class.java),
+            ItemInfo("Customer view 1", this.application, CustomerView1Activity::class.java),
 
             )
     }
