@@ -20,6 +20,7 @@ import com.longlong.an.jetpackcomposebooklearn.chapter5.StickActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter6.CustomerView1Activity
 import com.longlong.an.jetpackcomposebooklearn.chapter6.CustomerView2Activity
 import com.longlong.an.jetpackcomposebooklearn.chapter7.Animation1Activity
+import com.longlong.an.jetpackcomposebooklearn.chapter7.Animation2Activity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -53,6 +54,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Customer view 1", this.application, CustomerView1Activity::class.java),
             ItemInfo("Customer view 2 矩形｜椭圆", this.application, CustomerView2Activity::class.java),
             ItemInfo("animation", this.application, Animation1Activity::class.java),
+            ItemInfo("animation2", this.application, Animation2Activity::class.java),
 
             )
     }
@@ -81,7 +83,7 @@ class CategoryActivity : AppCompatActivity() {
                     null
                 )
             ).also { vh ->
-                vh.itemText.setOnClickListener {
+                vh.itemView.setOnClickListener {
                     val itemInfo = this.data[vh.adapterPosition]
                     Result.runCatching {
                         parent.context.startActivity(Intent(itemInfo.ctx, itemInfo.java))

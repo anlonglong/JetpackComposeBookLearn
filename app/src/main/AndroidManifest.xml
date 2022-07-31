@@ -47,6 +47,7 @@
         <activity android:name=".chapter6.CustomerView1Activity" />
         <activity android:name=".chapter6.CustomerView2Activity" />
         <activity android:name=".chapter7.Animation1Activity" />
+        <activity android:name=".chapter7.Animation2Activity" />
     </application>
 
 </manifest>
