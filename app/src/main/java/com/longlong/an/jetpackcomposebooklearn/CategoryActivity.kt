@@ -23,6 +23,7 @@ import com.longlong.an.jetpackcomposebooklearn.chapter7.Animation1Activity
 import com.longlong.an.jetpackcomposebooklearn.chapter7.Animation2Activity
 import com.longlong.an.jetpackcomposebooklearn.chapter7.CustomerAnimation1Activity
 import com.longlong.an.jetpackcomposebooklearn.chapter7.GuestureActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter8.ViewModelActivity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -59,6 +60,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("animation2", this.application, Animation2Activity::class.java),
             ItemInfo("animation2", this.application, CustomerAnimation1Activity::class.java),
             ItemInfo("Gestures", this.application, GuestureActivity::class.java),
+            ItemInfo("VM1", this.application, ViewModelActivity::class.java),
 
             )
     }
