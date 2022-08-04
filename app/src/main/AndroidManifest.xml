@@ -51,6 +51,7 @@
         <activity android:name=".chapter7.CustomerAnimation1Activity" />
         <activity android:name=".chapter7.GuestureActivity" />
         <activity android:name=".chapter8.ViewModelActivity" />
+        <activity android:name=".chapter8.NavigationActivity" />
     </application>
 
 </manifest>
