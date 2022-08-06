@@ -52,6 +52,7 @@
         <activity android:name=".chapter7.GuestureActivity" />
         <activity android:name=".chapter8.ViewModelActivity" />
         <activity android:name=".chapter8.NavigationActivity" />
+        <activity android:name=".chapter9.AndroidViewActivity" />
     </application>
 
 </manifest>
