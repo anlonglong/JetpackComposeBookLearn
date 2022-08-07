@@ -40,6 +40,9 @@
         <entry key="app/src/main/res/layout/activity_category.xml" value="0.15806159420289856" />
         <entry key="app/src/main/res/layout/activity_themectivity.xml" value="0.16576086956521738" />
         <entry key="app/src/main/res/layout/category_item.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/compose_layout.xml" value="0.20380434782608695" />
+        <entry key="app/src/main/res/layout/fragment_layout.xml" value="0.20380434782608695" />
+        <entry key="app/src/main/res/layout/view_binding_layout.xml" value="0.17708333333333334" />
       </map>
     </option>
   </component>

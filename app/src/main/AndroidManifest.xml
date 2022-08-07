@@ -53,6 +53,8 @@
         <activity android:name=".chapter8.ViewModelActivity" />
         <activity android:name=".chapter8.NavigationActivity" />
         <activity android:name=".chapter9.AndroidViewActivity" />
+        <activity android:name=".chapter9.ViewBindingActivity" />
+        <activity android:name=".chapter9.FragmentActivity" />
     </application>
 
 </manifest>

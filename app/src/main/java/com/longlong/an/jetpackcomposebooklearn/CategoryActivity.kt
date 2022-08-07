@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,6 +27,8 @@ import com.longlong.an.jetpackcomposebooklearn.chapter7.GuestureActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter8.NavigationActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter8.ViewModelActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter9.AndroidViewActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter9.FragmentActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter9.ViewBindingActivity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -64,7 +67,9 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Gestures", this.application, GuestureActivity::class.java),
             ItemInfo("VM1", this.application, ViewModelActivity::class.java),
             ItemInfo("Nav", this.application, NavigationActivity::class.java),
-            ItemInfo("Android View", this.application, AndroidViewActivity::class.java),
+            ItemInfo("代码创建 Android View", this.application, AndroidViewActivity::class.java),
+            ItemInfo("compose中使用Android的布局中的view", this.application, ViewBindingActivity::class.java),
+            ItemInfo("fragment in compose activity", this.application, FragmentActivity::class.java),
             )
     }
 
@@ -95,6 +100,7 @@ class CategoryActivity : AppCompatActivity() {
                 vh.itemView.setOnClickListener {
                     val itemInfo = this.data[vh.adapterPosition]
                     Result.runCatching {
+                        //Toast.makeText(this@CategoryActivity, "lllllll", Toast.LENGTH_SHORT).show()
                         parent.context.startActivity(Intent(itemInfo.ctx, itemInfo.java))
                     }
                 }
