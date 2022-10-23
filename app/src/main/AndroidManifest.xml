@@ -55,6 +55,7 @@
         <activity android:name=".chapter9.AndroidViewActivity" />
         <activity android:name=".chapter9.ViewBindingActivity" />
         <activity android:name=".chapter9.FragmentActivity" />
+        <activity android:name=".mediataton.MediationActivity" />
     </application>
 
 </manifest>

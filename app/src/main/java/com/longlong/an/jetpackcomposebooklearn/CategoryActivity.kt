@@ -29,6 +29,7 @@ import com.longlong.an.jetpackcomposebooklearn.chapter8.ViewModelActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter9.AndroidViewActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter9.FragmentActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter9.ViewBindingActivity
+import com.longlong.an.jetpackcomposebooklearn.mediataton.MediationActivity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -70,6 +71,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("代码创建 Android View", this.application, AndroidViewActivity::class.java),
             ItemInfo("compose中使用Android的布局中的view", this.application, ViewBindingActivity::class.java),
             ItemInfo("fragment in compose activity", this.application, FragmentActivity::class.java),
+            ItemInfo("Mediation activity", this.application, MediationActivity::class.java),
             )
     }
 
