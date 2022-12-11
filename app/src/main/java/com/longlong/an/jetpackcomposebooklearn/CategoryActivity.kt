@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.longlong.an.jetpackcomposebooklearn.DerivedStateOf.DerivedStateOfExampleActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter2.*
 import com.longlong.an.jetpackcomposebooklearn.chapter4.*
 import com.longlong.an.jetpackcomposebooklearn.chapter5.BottomNavigationActivity
@@ -29,7 +30,11 @@ import com.longlong.an.jetpackcomposebooklearn.chapter8.ViewModelActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter9.AndroidViewActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter9.FragmentActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter9.ViewBindingActivity
+import com.longlong.an.jetpackcomposebooklearn.effect.EffectActivity
+import com.longlong.an.jetpackcomposebooklearn.localcomposiprovider.CompositionLocalProviderActivity
 import com.longlong.an.jetpackcomposebooklearn.mediataton.MediationActivity
+import com.longlong.an.jetpackcomposebooklearn.snapshotFlow.SnapFlowActivity
+import com.longlong.an.jetpackcomposebooklearn.state.MutableStateActivity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -72,6 +77,11 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("compose中使用Android的布局中的view", this.application, ViewBindingActivity::class.java),
             ItemInfo("fragment in compose activity", this.application, FragmentActivity::class.java),
             ItemInfo("Mediation activity", this.application, MediationActivity::class.java),
+            ItemInfo("解释说明 compose中的 remember 和 state的含义", this.application, MutableStateActivity::class.java),
+            ItemInfo("附带效应说明", this.application, EffectActivity::class.java),
+            ItemInfo("ComposeLocalOf使用", this.application, CompositionLocalProviderActivity::class.java),
+            ItemInfo("SnapFlow使用", this.application, SnapFlowActivity::class.java),
+            ItemInfo("DerivedStateOf使用", this.application, DerivedStateOfExampleActivity::class.java),
             )
     }
 

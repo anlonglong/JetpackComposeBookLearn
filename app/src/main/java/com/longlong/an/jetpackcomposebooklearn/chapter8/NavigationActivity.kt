@@ -50,6 +50,7 @@ class NavigationActivity : ComponentActivity() {
     fun OnePage(navi: NavHostController) {
         BasePage("One"){
             navi.navigate("two_page/anlonglong")
+            navi.navigateUp()
         }
     }
 
