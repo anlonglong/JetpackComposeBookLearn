@@ -4,6 +4,7 @@
     package="com.longlong.an.jetpackcomposebooklearn">
 
     <application
+        android:name=".application.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -45,6 +46,22 @@
         <activity android:name=".chapter5.StickActivity" />
         <activity android:name=".chapter5.BottomNavigationActivity" />
         <activity android:name=".chapter6.CustomerView1Activity" />
+        <activity android:name=".chapter6.CustomerView2Activity" />
+        <activity android:name=".chapter7.Animation1Activity" />
+        <activity android:name=".chapter7.Animation2Activity" />
+        <activity android:name=".chapter7.CustomerAnimation1Activity" />
+        <activity android:name=".chapter7.GuestureActivity" />
+        <activity android:name=".chapter8.ViewModelActivity" />
+        <activity android:name=".chapter8.NavigationActivity" />
+        <activity android:name=".chapter9.AndroidViewActivity" />
+        <activity android:name=".chapter9.ViewBindingActivity" />
+        <activity android:name=".chapter9.FragmentActivity" />
+        <activity android:name=".mediataton.MediationActivity" />
+        <activity android:name=".state.MutableStateActivity" />
+        <activity android:name=".effect.EffectActivity" />
+        <activity android:name=".localcomposiprovider.CompositionLocalProviderActivity" />
+        <activity android:name=".snapshotFlow.SnapFlowActivity" />
+        <activity android:name=".DerivedStateOf.DerivedStateOfExampleActivity" />
     </application>
 
 </manifest>

@@ -3,6 +3,7 @@ package com.longlong.an.jetpackcomposebooklearn.chapter1
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 
 class TextViewModel : ViewModel() {
     private var _index = MutableLiveData(0)

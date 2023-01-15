@@ -3,6 +3,7 @@ package com.longlong.an.jetpackcomposebooklearn.chapter5
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -82,11 +83,13 @@ class BottomNavigationActivity : ComponentActivity() {
                 }
             }
         }) {
-            when (position) {
-                Tab.ONE -> One()
-                Tab.TWO -> Two()
-                Tab.THREE -> Three()
-                Tab.FOUR -> Four()
+            Crossfade(targetState = position) { screen ->
+                when (screen) {
+                    Tab.ONE -> One()
+                    Tab.TWO -> Two()
+                    Tab.THREE -> Three()
+                    Tab.FOUR -> Four()
+                }
             }
         }
     }

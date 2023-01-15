@@ -7,10 +7,12 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.longlong.an.jetpackcomposebooklearn.DerivedStateOf.DerivedStateOfExampleActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter2.*
 import com.longlong.an.jetpackcomposebooklearn.chapter4.*
 import com.longlong.an.jetpackcomposebooklearn.chapter5.BottomNavigationActivity
@@ -18,6 +20,21 @@ import com.longlong.an.jetpackcomposebooklearn.chapter5.LazyColumnActivty
 import com.longlong.an.jetpackcomposebooklearn.chapter5.MultiTypeActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter5.StickActivity
 import com.longlong.an.jetpackcomposebooklearn.chapter6.CustomerView1Activity
+import com.longlong.an.jetpackcomposebooklearn.chapter6.CustomerView2Activity
+import com.longlong.an.jetpackcomposebooklearn.chapter7.Animation1Activity
+import com.longlong.an.jetpackcomposebooklearn.chapter7.Animation2Activity
+import com.longlong.an.jetpackcomposebooklearn.chapter7.CustomerAnimation1Activity
+import com.longlong.an.jetpackcomposebooklearn.chapter7.GuestureActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter8.NavigationActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter8.ViewModelActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter9.AndroidViewActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter9.FragmentActivity
+import com.longlong.an.jetpackcomposebooklearn.chapter9.ViewBindingActivity
+import com.longlong.an.jetpackcomposebooklearn.effect.EffectActivity
+import com.longlong.an.jetpackcomposebooklearn.localcomposiprovider.CompositionLocalProviderActivity
+import com.longlong.an.jetpackcomposebooklearn.mediataton.MediationActivity
+import com.longlong.an.jetpackcomposebooklearn.snapshotFlow.SnapFlowActivity
+import com.longlong.an.jetpackcomposebooklearn.state.MutableStateActivity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -49,7 +66,22 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("StickLazyColumn布局", this.application, StickActivity::class.java),
             ItemInfo("Bottom navi 布局", this.application, BottomNavigationActivity::class.java),
             ItemInfo("Customer view 1", this.application, CustomerView1Activity::class.java),
-
+            ItemInfo("Customer view 2 矩形｜椭圆", this.application, CustomerView2Activity::class.java),
+            ItemInfo("animation", this.application, Animation1Activity::class.java),
+            ItemInfo("animation2", this.application, Animation2Activity::class.java),
+            ItemInfo("animation2", this.application, CustomerAnimation1Activity::class.java),
+            ItemInfo("Gestures", this.application, GuestureActivity::class.java),
+            ItemInfo("VM1", this.application, ViewModelActivity::class.java),
+            ItemInfo("Nav", this.application, NavigationActivity::class.java),
+            ItemInfo("代码创建 Android View", this.application, AndroidViewActivity::class.java),
+            ItemInfo("compose中使用Android的布局中的view", this.application, ViewBindingActivity::class.java),
+            ItemInfo("fragment in compose activity", this.application, FragmentActivity::class.java),
+            ItemInfo("Mediation activity", this.application, MediationActivity::class.java),
+            ItemInfo("解释说明 compose中的 remember 和 state的含义", this.application, MutableStateActivity::class.java),
+            ItemInfo("附带效应说明", this.application, EffectActivity::class.java),
+            ItemInfo("ComposeLocalOf使用", this.application, CompositionLocalProviderActivity::class.java),
+            ItemInfo("SnapFlow使用", this.application, SnapFlowActivity::class.java),
+            ItemInfo("DerivedStateOf使用", this.application, DerivedStateOfExampleActivity::class.java),
             )
     }
 
@@ -77,9 +109,10 @@ class CategoryActivity : AppCompatActivity() {
                     null
                 )
             ).also { vh ->
-                vh.itemText.setOnClickListener {
+                vh.itemView.setOnClickListener {
                     val itemInfo = this.data[vh.adapterPosition]
-                    Result.runCatching{
+                    Result.runCatching {
+                        //Toast.makeText(this@CategoryActivity, "lllllll", Toast.LENGTH_SHORT).show()
                         parent.context.startActivity(Intent(itemInfo.ctx, itemInfo.java))
                     }
                 }

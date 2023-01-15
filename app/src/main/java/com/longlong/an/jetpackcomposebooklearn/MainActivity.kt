@@ -49,6 +49,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
+    BoxWithConstraints() {
+        
+    }
     Text(modifier = Modifier
         .width(100.dp)
         .height(20.dp),text = "Hello $name!")
