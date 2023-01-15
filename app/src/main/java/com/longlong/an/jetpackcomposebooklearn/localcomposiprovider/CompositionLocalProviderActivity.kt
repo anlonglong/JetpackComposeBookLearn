@@ -20,23 +20,30 @@ import com.longlong.an.jetpackcomposebooklearn.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.net.URL
-val userLocal = compositionLocalOf<User> { error("Not provider") }
+val userLocal = staticCompositionLocalOf<User> { error("Not provider") }
 private const val TAG = "CompositionLocalProvide"
 class CompositionLocalProviderActivity : ComponentActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        var v by mutableStateOf(User(
+            name = "JACK", profilePhotoUrl = R.drawable.ic_launcher_foreground,
+            nameClick = {
+
+            }, eventClick = {
+                Log.i(TAG, "onCreate: event click")
+            }))
         setContent {
             Column {
-                val u = User("JACK",R.drawable.ic_launcher_foreground,
-                    nameClick = {
-
-                    }, eventClick = {
-                        Log.i(TAG, "onCreate: event click")
-                    })
-                CompositionLocalProvider(userLocal provides u) {
+                CompositionLocalProvider(userLocal provides v) {
                     someScreenSample()
+                    Button(onClick = { v = User(
+                        name = "all",
+                        nameClick = {},
+                        eventClick = {}) }) {
+                        Text(text = "changed User")
+                    }
                 }
 
             }
@@ -50,6 +57,7 @@ class CompositionLocalProviderActivity : ComponentActivity() {
 @Composable
 fun someScreenSample() {
     UserName()
+    UserName2()
     UserPhoto()
     UserEvent()
 }
@@ -72,9 +80,15 @@ fun UserEvent() {
 
 @Composable
 fun UserName() {
-    val click = userLocal.current.nameClick
     Text(text = userLocal.current.name, modifier = Modifier.clickable {
-        click()
+
+    })
+}
+
+@Composable
+fun UserName2() {
+    Text(text = "Changed User", modifier = Modifier.clickable {
+        userLocal.provides(User("all", 0,{},{}))
     })
 }
 
@@ -86,7 +100,7 @@ private fun UserPhoto() {
 
 data class User(
     var name: String,
-    val profilePhotoUrl: Int,
+    val profilePhotoUrl: Int = R.drawable.ic_launcher_foreground,
     val nameClick: ()->Unit,
     val eventClick:()->Unit)
 data class ProfileIcon(val src: String)
