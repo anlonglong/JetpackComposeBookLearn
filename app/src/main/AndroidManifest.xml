@@ -62,6 +62,7 @@
         <activity android:name=".localcomposiprovider.CompositionLocalProviderActivity" />
         <activity android:name=".snapshotFlow.SnapFlowActivity" />
         <activity android:name=".DerivedStateOf.DerivedStateOfExampleActivity" />
+        <activity android:name=".modify.ModifierActivity" />
     </application>
 
 </manifest>

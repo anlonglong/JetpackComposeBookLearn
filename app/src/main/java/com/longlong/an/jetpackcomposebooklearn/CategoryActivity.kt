@@ -7,8 +7,10 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.preferencesDataStore
+import androidx.datastore.preferences.preferencesDataStoreFile
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -33,6 +35,7 @@ import com.longlong.an.jetpackcomposebooklearn.chapter9.ViewBindingActivity
 import com.longlong.an.jetpackcomposebooklearn.effect.EffectActivity
 import com.longlong.an.jetpackcomposebooklearn.localcomposiprovider.CompositionLocalProviderActivity
 import com.longlong.an.jetpackcomposebooklearn.mediataton.MediationActivity
+import com.longlong.an.jetpackcomposebooklearn.modify.ModifierActivity
 import com.longlong.an.jetpackcomposebooklearn.snapshotFlow.SnapFlowActivity
 import com.longlong.an.jetpackcomposebooklearn.state.MutableStateActivity
 
@@ -58,7 +61,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("Column布局", this.application, ColumnActivity::class.java),
             ItemInfo("Row布局", this.application, RowActivity::class.java),
             ItemInfo("Box布局", this.application, BoxActivity::class.java),
-            ItemInfo("Modify布局", this.application, ModifyActivity::class.java),
+            ItemInfo("Modify布局", this.application, ModifierActivity::class.java),
             ItemInfo("Scaffold布局", this.application, ScaffoldActivity::class.java),
             ItemInfo("Constraint布局", this.application, ConstranitActivity::class.java),
             ItemInfo("LazyColumn布局", this.application, LazyColumnActivty::class.java),
@@ -82,6 +85,7 @@ class CategoryActivity : AppCompatActivity() {
             ItemInfo("ComposeLocalOf使用", this.application, CompositionLocalProviderActivity::class.java),
             ItemInfo("SnapFlow使用", this.application, SnapFlowActivity::class.java),
             ItemInfo("DerivedStateOf使用", this.application, DerivedStateOfExampleActivity::class.java),
+            ItemInfo("Modifier heightIn/widthIn/sizeIn 属性的区别 ", this.application, ModifierActivity::class.java),
             )
     }
 
